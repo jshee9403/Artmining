@@ -1,0 +1,169 @@
+/* index */
+#content {min-width: 1080px; overflow: hidden;} /* #promotion2의 이미지 크기가 지나치게 커서 가로에 스크롤바가 생성되므로 oh주는거 */
+#btnAppDown {position: fixed; right: 190px; bottom: 30px; z-index: 900;}
+.title {font-size: 40px; line-height: 58px; text-align: center;}
+.sub_tit {font-size: 60px; line-height: 58px; font-family: AvantGarB; padding-bottom: 20px;}
+
+
+/* main */
+#mainSlider {position: relative; height: 40vw; min-width: 1080px; min-height: 432px; overflow: hidden; margin-top: 77px;}
+#mainSlider:before {content: ''; width: 40%; height: 100%; display: block; background: #dadada;}
+#mainSlider .visual li {position: absolute; top: 0; left: 0; bottom: 0; right: 0; z-index: 10;}
+#mainSlider .visual li.on {z-index: 20;}
+
+#mainSlider .visual li:before {content: ''; position: absolute; top: 0; left: 0; width: 40%; height: 0; background: #ffb400;}
+#mainSlider .visual li.on:before {height: 100%;}
+
+#mainSlider .visual li .right_bg {margin-left: 40%;}
+#mainSlider .visual li .right_bg img {width: 100%; height: auto;}
+#mainSlider .visual li .txtbox {position: absolute; left: 25%; top: 10vw; transform: translateY(-2vw); color: #000;}
+#mainSlider .visual li.on .txtbox {transform: translateY(0vw);}
+#mainSlider .visual li .txtbox h4 {font-size: 2.6vw; line-height: 2.7vw; font-family: AvantGarB;}
+#mainSlider .visual li .txtbox p {font-size: 1.2vw; line-height: 1.7vw; margin-top: 1.4vw;}
+
+
+/* controlbox */
+#mainSlider .controlbox {position: absolute; right: 0; bottom: 0; width: 60%; height: 15.1%; background: #fff; z-index: 30; text-align: center; font-size: 0.7vw; text-align: center; color: #000;}
+#mainSlider .controlbox > *{position: absolute; top: 25%; height: 50%;}
+#mainSlider .controlbox .play_stop {left: 60%; width: 5%;}
+#mainSlider .controlbox .play_stop button {display: none; width: 100%; height: 100%; background: #ffb400; line-height: 100%;}
+#mainSlider .controlbox .play_stop button.on {display: block;}
+#mainSlider .controlbox .paging {left: 10%; width: 50%; }
+#mainSlider .controlbox .paging li {display: table; float: left; width: calc(100% / 3); height: 100%;}
+#mainSlider .controlbox .paging li a {display: table-cell; vertical-align: middle; height: 100%; background: #dadada; border-left: 1px solid #fff; border-right: 1px solid #fff;}
+#mainSlider .controlbox .paging li.on a {background: #ffb400;}
+
+
+/* biz */
+#biz {margin-top: 180px;}
+#biz .fade {position: relative; margin: 100px 20px 0; height: 508px; padding-top: 90px;}
+#biz img {position: absolute; top: 0; right: 0;}
+#biz .bg_gray {background: #f0f0f0; padding-top: 340px; height: 700px; margin-bottom: 160px;}
+#biz .bg_gray .fade {padding-top: 0;}
+#biz .bg_gray .area {margin: 0 auto;}
+#biz .bg_gray .area .cont_txt {padding: 45px 50px 0 0;}
+#biz .bg_gray img {right: auto; left: 0;}
+
+
+/* promotion1 */
+#promotion1 {height: 579px; background: url(../images/main/main-promotion-bg.jpg) no-repeat fixed right 10px top; padding: 35.5px 0; box-sizing: border-box;}
+#promotion1 .cont_txt {width: 519px; height: 508px; padding: 50px 0 0 50px; background: #fff; box-sizing: border-box;}
+ 
+
+/* copy */
+#copy .area {position: relative; height: 990px;}
+#copy .cont_txt {position: absolute; top: 270px; right: 50px;}
+
+
+/* promotion2 */
+#promotion2 {position: relative; background: #f0f0f0; padding: 125px 0 120px 0;}
+#promotion2 .sub_tit {font-family: NanumS; font-weight: 600; font-size: 50px; line-height: 50px; letter-spacing: -2px;}
+#promotion2 .sub_tit span {display: block; font-family: NanumS; font-weight: 400;}
+#promotion2 .cont_txt p:before {display: none;}
+#promotion2 .cont_txt p {margin-top: 0; padding-bottom: 30px;}
+
+#promotion2 .app_link {display: inline-block; font-size: 20px; line-height: 34px; color: #141414; font-weight: 500; margin-bottom: 35px;}
+#promotion2 .app_link:hover, 
+#promotion2 .app_link:focus {color: #ffb400;}
+
+#promotion2 .app_link .arrow {display: inline-block; vertical-align: middle; margin-left: 10px; width: 18px; height: 18px; background: rgba(14,14,14,0.5); border-radius: 50%; position: relative; overflow: hidden;}
+#promotion2 .app_link:hover .arrow, 
+#promotion2 .app_link:focus .arrow {background: #ffb400;}
+
+#promotion2 .app_link .arrow:after {content:''; border-top: 4px solid transparent; border-bottom: 4px solid transparent; border-left: 6px solid #fff; position: absolute; top: 50%; left: 55%; transform: translate(-50%,-50%);}
+#promotion2 .app_link:hover .arrow:after,
+#promotion2 .app_link:focus .arrow:after {animation: move 0.6s infinite;}
+
+@-webkit-keyframes move {
+    0% {-webkit-transform: translate(-16px,-50%);}
+    100% {-webkit-transform: translate(16px,-50%);}
+}
+@-moz-keyframes move {
+    0% {-moz-transform: translate(-16px,-50%);}
+    100% {-moz-transform: translate(16px,-50%);}
+}
+@-o-keyframes move {
+    0% {-o-transform: translate(-16px,-50%);}
+    100% {-o-transform: translate(16px,-50%);}
+}
+@keyframes move {
+    0% {transform: translate(-16px,-50%);}
+    100% {transform: translate(16px,-50%);}
+}
+
+#promotion2 .btn .btn_effect {display: inline-block; width: 278px; height: 78px; line-height: 78px; border: 1px solid #000; font-size: 26px; color: #000;}
+#promotion2 .btn .btn_effect +.btn_effect {margin-left: 20px;}
+#promotion2 .btn .btn_effect:hover, #promotion2 .btn .btn_effect:focus {border-color: #f9c200;}
+#promotion2 .btn img {vertical-align: middle; margin-right: 10px;}
+#promotion2 .btn .qrcode {margin: -75px 0 18px 0;}
+#promotion2 .btn p {font-size: 14px; line-height: 16px; color:#000; padding-bottom: 0;}
+#promotion2 .area > img {position: absolute; top: -132px; left: 50%; margin-left: -10px;}
+
+
+/* issue */
+#mainIssue {padding: 110px 0 170px 0;}
+#mainIssue .issue {margin-top: 70px;}
+#mainIssue .issue li {
+    float: left; width: 236px; height: 330px;
+    -webkit-transform: scale(0.2);
+    -ms-transform: scale(0.2);
+    -moz-transform: scale(0.2);
+    -o-transform: scale(0.2);
+    transform: scale(0.2);
+}
+#mainIssue .issue li + li {margin-left: 12px;}
+#mainIssue .issue li a .img {overflow: hidden; height: 237px; background: #000;}
+#mainIssue .issue li a .img img {width: auto; height: 237px; -ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=80)'; filter:Alpha(Opacity=80); opacity: 0.8;}
+
+#mainIssue .issue li a .txt {position: relative; margin-top: 5px; padding: 15px 25px 0;}
+#mainIssue .issue li a .txt p {line-height: 22px; color: #000; font-family: NanumS; font-weight: 500; margin-bottom: 7px;}
+#mainIssue .issue li a .txt span{font-size: 14px; color: #909090;}
+#mainIssue .issue li a .txt:after {content: ''; width: 16px; height: 4px; position: absolute; top: 20px; left: 0; background: #000;}
+
+#mainIssue .issue li:hover a .img img, #mainIssue .issue li:focus a .img img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+#mainIssue .issue li:hover a .txt:after, #mainIssue .issue li:focus a .txt:after {
+    -webkit-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+#mainIssue .issue.on li, #mainIssue .issue li a .img img {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+
+
+/* 공통 transition */
+#mainSlider .visual li:before, #mainSlider .visual li .right_bg, #mainSlider .visual li .txtbox, .fade, .down, .up, #mainIssue .issue li a .img img, #mainIssue .issue li a .txt:after, #mainIssue .issue li, #promotion2 .btn .btn_effect {-webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease;}
+
+
+/* 공통 opacity : ie8, ie7, 상위브라우저*/
+#mainSlider .visual li .right_bg, #mainSlider .visual li .txtbox, .fade, #mainIssue .issue li  {-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)'; filter:Alpha(Opacity=0); opacity: 0;}
+#mainSlider .visual li.on .right_bg, #mainSlider .visual li.on .txtbox, .fade.on, #mainIssue .issue.on li  {-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)'; filter:Alpha(Opacity=100); opacity: 1;}
+
+
+/* 공통 text */
+.cont_txt strong {font-size: 30px; line-height: 40px; font-family: NanumS; font-weight: 500;}
+.cont_txt p:before {content:''; position: absolute; width: 33px; height: 1px; background: #242424; top: -25px;}
+.cont_txt p {position: relative; margin-top: 75px; line-height: 30px;}
+.txt_r {text-align: right;}
+.txt_r p:before {right: 0;}
+
+
+/* 공통 up, down */
+.fade .down {-webkit-transform: translateY(-70px); -ms-transform: translateY(-70px); -moz-transform: translateY(-70px); -o-transform: translateY(-70px); transform: translateY(-70px);}
+.fade.on .down {-webkit-transform: translateY(0px); -ms-transform: translateY(0px); -moz-transform: translateY(0px); -o-transform: translateY(0px); transform: translateY(0px);}
+
+.fade .up {-webkit-transform: translateY(70px); -ms-transform: translateY(70px); -moz-transform: translateY(70px); -o-transform: translateY(70px); transform: translateY(70px);}
+.fade.on .up {-webkit-transform: translateY(0px); -ms-transform: translateY(0px); -moz-transform: translateY(0px); -o-transform: translateY(0px); transform: translateY(0px);} 
