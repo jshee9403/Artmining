@@ -2,34 +2,34 @@
 @font-face {
     font-family: NanumS;
     font-weight: 300;
-    src: url("../fonts/NanumSquareL.eot");
+    src: url("../font/NanumSquareL.eot");
     src: local("※"), 
-        url("../fonts/NanumSquareL.woff") format("woff"),
-        url("../fonts/NanumSquareL.ttf") format("truetype");
+        url("../font/NanumSquareL.woff") format("woff"),
+        url("../font/NanumSquareL.ttf") format("truetype");
 }
 @font-face {
     font-family: NanumS;
     font-weight: 400;
-    src: url("../fonts/NanumSquareR.eot");
+    src: url("../font/NanumSquareR.eot");
     src: local("※"), 
-        url("../fonts/NanumSquareR.woff") format("woff"),
-        url("../fonts/NanumSquareR.ttf") format("truetype");
+        url("../font/NanumSquareR.woff") format("woff"),
+        url("../font/NanumSquareR.ttf") format("truetype");
 }
 @font-face {
     font-family: NanumS;
     font-weight: 500;
-    src: url("../fonts/NanumSquareB.eot");
+    src: url("../font/NanumSquareB.eot");
     src: local("※"), 
-        url("../fonts/NanumSquareB.woff") format("woff"),
-        url("../fonts/NanumSquareB.ttf") format("truetype");
+        url("../font/NanumSquareB.woff") format("woff"),
+        url("../font/NanumSquareB.ttf") format("truetype");
 }
 @font-face {
     font-family: NanumS;
     font-weight: 600;
-    src: url("../fonts/NanumSquareEB.eot");
+    src: url("../font/NanumSquareEB.eot");
     src: local("※"), 
-        url("../fonts/NanumSquareEB.woff") format("woff"),
-        url("../fonts/NanumSquareEB.ttf") format("truetype");
+        url("../font/NanumSquareEB.woff") format("woff"),
+        url("../font/NanumSquareEB.ttf") format("truetype");
 }
 
 @font-face {
